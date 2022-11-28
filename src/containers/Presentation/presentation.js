@@ -7,7 +7,7 @@ function presentation(props) {
                 <p className='text-fromLogo font-bold '>Hello there, I'm </p>
                 <h1 className='text-[2.000rem] text-white font-extrabold font-sans md:text-[5.052rem]'>Dunia Dunia</h1>
                 <p>I'm a big believe in technology as a key to easing every aspect of the human activities through scalable software, well designed and utility based</p>
-                <button className='px-3 w-50 my-10 mx-auto border-2 border-fromLogo p-2 rounded-lg text-fromLogo hover:bg-lightButton hover:text-fromLogo'>Let's Connect</button>
+                <button className='px-3 w-50 mx-auto border-2 border-fromLogo p-2 rounded-lg text-fromLogo hover:bg-lightButton hover:text-fromLogo'>Let's Connect</button>
             </div>
         </div>
     );

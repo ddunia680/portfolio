@@ -2,7 +2,8 @@ import React from 'react';
 import NavItems from '../../components/navigation/navItems';
 import GoButton from '../../components/GoButton/goButton';
 
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faListUl, faX } from '@fortawesome/free-solid-svg-icons'
 import logo from '../../images/logo.png'
 
 function header(props) {
@@ -16,6 +17,10 @@ function header(props) {
                 <GoButton>
                     Download CV
                 </GoButton>
+            </div>
+            <div className='h-80% block md:hidden'>
+                <FontAwesomeIcon icon={faListUl} className='text-fromLogo text-3xl'/>
+                {/* <FontAwesomeIcon icon={faX} className='text-fromLogo text-3xl'/> */}
             </div>
             
         </header>
