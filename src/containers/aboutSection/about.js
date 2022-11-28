@@ -18,7 +18,7 @@ function about(props) {
 
                 <p className='my-3 text-left'>I'm named <span className='text-xl font-bold text-fromLogo md:text-2xl'>Dunia Ghislain</span>, since I learned about the tech industry and the value it adds to every aspect of human's life today, I have been very excited about learning it and growing</p>
 
-                <p className='my-3 text-left'>I'm an educated engineer both in working ethic as well as in the technical aspect. I'm comfortable with working with a team and contributing to global projects </p>
+                <p className='my-3 text-left'>I'm an educated engineer both in working ethic as well as in the technical aspect. I'm comfortable working with a team and contributing to global projects </p>
 
                 <p className='my-3 text-left'>I'm currently a frontend developer but also in learning of the backend technologies which I will be able to add to my CV soon enough. These the technologies I currently am comfortable working with</p>
 
