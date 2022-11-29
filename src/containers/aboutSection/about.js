@@ -6,7 +6,7 @@ import React from 'react';
 import dunia from '../../images/dunia.JPG';
 function about(props) {
     return (
-        <div className='flex flex-col-reverse justify-center md:container mx-0 md:mx-7 md:flex-row'>
+        <div id='about' className='flex flex-col-reverse justify-center md:container mx-0 md:mx-7 md:flex-row'>
             <div className='w-[100%] p-7 md:w-[40%]'>
                 <img src={dunia} alt=''/>
             </div>

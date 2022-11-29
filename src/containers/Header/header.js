@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 import NavItems from '../../components/navigation/navItems';
 import GoButton from '../../components/GoButton/goButton';
@@ -37,9 +38,27 @@ function Header(props) {
             {showDropUI ? 
             <div className='absolute bg-darkBlue right-0 top-20 px-10 border-l-2 border-r-2 border-b-2  border-violet'>
                 <ul className='flex flex-col space-y-2'>
-                    <li className='hover:text-fromLogo py-1'><a href='#'>About</a></li>
-                    <li className='hover:text-fromLogo py-1'><a href='#'>Projects</a></li>
-                    <li className='hover:text-fromLogo py-1'><a href='#'>Contacts</a></li>
+                    <li className='hover:text-fromLogo py-1' onClick={() => {
+                        window.scrollTo({
+                            top: 500,
+                            behavior: 'smooth'
+                        })
+                        hideDrop()
+                    }}>About</li>
+                    <li className='hover:text-fromLogo py-1' onClick={() => {
+                        window.scrollTo({
+                            top: 1900,
+                            behavior: 'smooth'
+                        })
+                        hideDrop()
+                    }}>Projects</li>
+                    <li className='hover:text-fromLogo py-1' onClick={() => {
+                        window.scrollTo({
+                            top: 3700,
+                            behavior: 'smooth'
+                        })
+                        hideDrop()
+                    }}>Contacts</li>
                 </ul>
             </div>
             : null}
