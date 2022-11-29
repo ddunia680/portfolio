@@ -13,6 +13,7 @@ function PicComp(props) {
             animate.start({
                 y: 0,
                 opacity: 1,
+                scale: 1,
                 transition: {
                     type: 'spring', duration: 3
                 }
@@ -21,7 +22,8 @@ function PicComp(props) {
         if(!inView) {
             animate.start({
                 y: '20vh',
-                opacity: 0
+                opacity: 0,
+                scale: 0.7,
             })
         }
     }, [inView, animate]);
