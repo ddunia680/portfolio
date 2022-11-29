@@ -5,6 +5,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track  == the rest of the bar*/
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle -- the scrolling piece */
+::-webkit-scrollbar-thumb {
+  background: #e50155;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9d023b;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
