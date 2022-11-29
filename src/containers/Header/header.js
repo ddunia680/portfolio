@@ -49,7 +49,7 @@ function Header(props) {
                     }}>About</li>
                     <li className='hover:text-fromLogo py-1' onClick={() => {
                         window.scrollTo({
-                            top: 1900,
+                            top: 1850,
                             behavior: 'smooth'
                         })
                         hideDrop()
