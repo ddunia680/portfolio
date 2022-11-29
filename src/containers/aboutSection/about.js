@@ -5,7 +5,7 @@ import PicComp from '../../components/picComponent/picComp';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAsterisk, faCircleDot } from '@fortawesome/free-solid-svg-icons'
-import dunia from '../../images/dunia.JPG';
+// import dunia from '../../images/dunia.JPG';
 
 
 function About(props) {
