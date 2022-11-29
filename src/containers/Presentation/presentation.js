@@ -1,29 +1,16 @@
-import React, { useEffect } from 'react';
-import { useAnimation, motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 
 function Presentation(props) {
 
-    const squareVariants = {
-        visible: {opacity: 1, scale: 1, transition: { duration: 1 }},
-        hidden: {opacity: 0, scale: 0, transition: { duration: 1 }}
-    }
-
-    const controls = useAnimation();
-    const [ ref, inView ] = useInView();
-
-    useEffect(() => {
-        if(inView) {
-            controls.start('visible');
-        }
-    }, [controls, inView])
 
     return (
         <motion.div 
-            ref={ref}
-            animate={controls}
-            initial='hidden'
-            variants={squareVariants}
+            // how things should be at the beginning
+            initial={{y: '50vh', opacity: 0}}
+            //the animation that should play
+            animate={{y: 0, opacity: 1}}
+            //the animation type and duration
+            transition={{type: 'spring', duration: 4}}
             className='mb-20 pt-[8rem]'>
                 <div className='mx-auto w-[80%] flex flex-col space-y-3 md:space-y-10 text-center px-auto text-white md:w-[50%]'>
                     <p className='text-fromLogo font-bold '>Hello there, I'm </p>

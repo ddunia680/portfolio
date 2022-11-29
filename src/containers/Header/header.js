@@ -19,7 +19,7 @@ function Header(props) {
     }
 
     return (
-        <header className='fixed top-0 w-screen h-20 bg-darkBlue text-white items-center mx-auto flex flex-row justify-between px-3 shadow-md shadow-violet lg:px-40'>
+        <header className='fixed z-10 top-0 w-screen h-20 bg-darkBlue text-white items-center mx-auto flex flex-row justify-between px-3 shadow-md shadow-violet lg:px-40'>
             <div className='w-[50px] h-[70%]'>
                 <img src={logo} alt=''/>
             </div>

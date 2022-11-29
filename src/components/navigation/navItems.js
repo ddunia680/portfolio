@@ -16,7 +16,7 @@ function navItems(props) {
                 <li className='h-[100%] px-5 mx-1 flex items-center transition-all duration-500 hover:bg-fromLogo hover:text-darkBlue hover:rounded-lg hover:transition-all hover:duration-500'
                 onClick={() => {
                     window.scrollTo({
-                        top: 1400,
+                        top: 1350,
                         behavior: 'smooth'
                     })
                 }}>
