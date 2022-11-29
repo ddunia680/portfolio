@@ -18,7 +18,7 @@ function Projects(props) {
             animate.start({
                 y: 0,
                 opacity: 1,
-                transition: {type: 'spring', duration: 2}
+                transition: {type: 'spring', duration: 3}
             })
         }
         if(!inView) {

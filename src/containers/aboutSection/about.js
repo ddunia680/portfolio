@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
+import PicComp from '../../components/picComponent/picComp';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAsterisk, faCircleDot } from '@fortawesome/free-solid-svg-icons'
@@ -24,19 +25,14 @@ function About(props) {
         if(!inView) {
             animate.start({
                 y: '20vh',
-                // opacity: 0
+                opacity: 0
             })
         }
     }, [inView, animate])
 
     return (
         <div id='about' className='flex flex-col-reverse justify-center md:container mx-0 md:mx-7 md:flex-row'>
-            <motion.div 
-                ref={ref}
-                animate={animate}
-                className='w-[100%] p-7 md:w-[40%]'>
-                <img src={dunia} alt=''/>
-            </motion.div>
+            <PicComp/>
             <motion.div 
                 ref={ref}
                 animate={animate}
