@@ -26,7 +26,9 @@ function Header(props) {
             <div className='hidden md:flex flex-row h-[100%] items-center'>
                 <NavItems/>
                 <GoButton>
-                    Download CV
+                    <a href='https://api.whatsapp.com/send?phone=256788306651&text=Thanks%20for%20contacting'>
+                        Let's Connect
+                    </a>
                 </GoButton>
             </div>
             <div className='h-80% block md:hidden'>
