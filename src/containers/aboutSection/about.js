@@ -46,7 +46,7 @@ function About(props) {
 
                 <p className='my-3 text-left'>I'm an educated engineer both in working ethic as well as in the technical aspect. I'm comfortable working with a team and contributing to global projects </p>
 
-                <p className='my-3 text-left'>I'm currently a frontend developer but also in learning of the backend technologies which I will be able to add to my CV soon enough. These the technologies I currently am comfortable working with</p>
+                <p className='my-3 text-left'>I'm currently a frontend developer but also in learning of the backend technologies which I will be able to add to my CV soon enough. These are the technologies I currently am comfortable working with</p>
 
                 <p className='text-lg text-fromLogo mt-7 md:text-2xl'>HTML <FontAwesomeIcon icon={faCircleDot}/> CSS <FontAwesomeIcon icon={faCircleDot}/> TailwindCSS <FontAwesomeIcon icon={faCircleDot}/> ReactJs <FontAwesomeIcon icon={faCircleDot}/> Firebase <FontAwesomeIcon icon={faCircleDot}/></p>
             </motion.div>
