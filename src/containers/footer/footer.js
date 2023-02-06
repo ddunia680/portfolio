@@ -11,7 +11,7 @@ function footer(props) {
                     <h5><FontAwesomeIcon icon={faLocationDot} /> Kampala, Uganda</h5>
                     <h5><FontAwesomeIcon icon={faPhone} /> +256 788 306 651     +256 779 364 053</h5>
                 </div>
-                <p><span className='text-fromLogo'>Dunia Dunia</span> &copy;2022 All rights reserved.</p>
+                <p><span className='text-fromLogo'>Dunia Dunia</span> &copy;2023 All rights reserved.</p>
             </div>
 
             <h3 className='text-2xl text-center md:text-left'><a href='https://github.com/ddunia680' className='transition-all duration-500 hover:text-fromLogo hover:transition-all hover:duration-500'><FontAwesomeIcon icon={faGithub}/></a> <a href='https://twitter.com/Dunia_Dunia5' className='transition-all duration-500 hover:text-fromLogo hover:transition-all hover:duration-500'><FontAwesomeIcon icon={faTwitter}/></a>  <a href='https://www.linkedin.com/in/dunia-dunia-86750b256/' className='transition-all duration-500 hover:text-fromLogo hover:transition-all hover:duration-500'><FontAwesomeIcon icon={faLinkedin}/></a>  <a href='https://www.instagram.com/dunia_dunia5/' className='transition-all duration-500 hover:text-fromLogo hover:transition-all hover:duration-500'><FontAwesomeIcon icon={faInstagram}/></a></h3>
