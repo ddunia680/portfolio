@@ -6,6 +6,7 @@ import ProjectItem from '../../components/ProjectItem/projectItem';
 import foodApp from '../../images/foodApp.png';
 import phonesApp from '../../images/phonesApp.png';
 import movie from '../../images/movie.png';
+import whatsapp from '../../images/whatsapp.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAsterisk, faCircleDot } from '@fortawesome/free-solid-svg-icons';
 
@@ -34,7 +35,7 @@ function Projects(props) {
 
         {title: 'Phones Shopping App', description: 'The Phones Shopping App provides a UI that allows a user to choose a phone they would like to buy, view all the details about the phone for better decision making, adding the articles to the cart and in the end be able to place the order.', stacks: <p className='text-lg text-fromLogo mt-7 md:text-2xl'>HTML <FontAwesomeIcon icon={faCircleDot}/> CSS <FontAwesomeIcon icon={faCircleDot}/> ReactJs <FontAwesomeIcon icon={faCircleDot}/> Firebase <FontAwesomeIcon icon={faCircleDot}/></p>, image: phonesApp, link: 'https://phones-shopping-app.vercel.app/' },
 
-        {title: 'Movies App', description: "The Movies App is a mainly static App for now which provides a nice view to users to see a serie's announce band and the episodes the serie has. There are future works on this one.", stacks: <p className='text-lg text-fromLogo mt-7 md:text-2xl'>HTML <FontAwesomeIcon icon={faCircleDot}/> CSS <FontAwesomeIcon icon={faCircleDot}/> TailwindCSS <FontAwesomeIcon icon={faCircleDot}/> ReactJs <FontAwesomeIcon icon={faCircleDot}/></p>, image: movie, link: 'https://movies-dsplay-app.vercel.app/' },
+        {title: 'Whatsapp Web Clone App', description: "This is an app that performs most of the web whastapps operations, it goes from text, audio, image and docs sharing to audio and video calls.", stacks: <p className='text-lg text-fromLogo mt-7 md:text-2xl'>HTML <FontAwesomeIcon icon={faCircleDot}/> CSS <FontAwesomeIcon icon={faCircleDot}/> TailwindCSS <FontAwesomeIcon icon={faCircleDot}/> ReactJs <FontAwesomeIcon icon={faCircleDot}/> NodeJs <FontAwesomeIcon icon={faCircleDot}/> ExpressJs <FontAwesomeIcon icon={faCircleDot}/> MongoDB <FontAwesomeIcon icon={faCircleDot}/> Socket.io <FontAwesomeIcon icon={faCircleDot}/></p>, image: whatsapp, link: 'https://my-whatsapp-clone.vercel.app/' },
     ]
 
 

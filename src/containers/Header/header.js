@@ -26,8 +26,8 @@ function Header(props) {
             <div className='hidden md:flex flex-row h-[100%] items-center'>
                 <NavItems/>
                 <GoButton>
-                    <a href='https://api.whatsapp.com/send?phone=256788306651&text=Thanks%20for%20contacting'>
-                        Let's Connect
+                    <a href='https://firebasestorage.googleapis.com/v0/b/upload-files-4592a.appspot.com/o/sharedFiles%2FCVDuniaDunia-updated_1680294204146.pdf?alt=media&token=25d95fc7-8f45-46ea-ab09-4c2fb65ca48a'>
+                        Download my CV
                     </a>
                 </GoButton>
             </div>
