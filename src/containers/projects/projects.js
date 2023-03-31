@@ -5,7 +5,6 @@ import ProjectItem from '../../components/ProjectItem/projectItem';
 
 import foodApp from '../../images/foodApp.png';
 import phonesApp from '../../images/phonesApp.png';
-import movie from '../../images/movie.png';
 import whatsapp from '../../images/whatsapp.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAsterisk, faCircleDot } from '@fortawesome/free-solid-svg-icons';
