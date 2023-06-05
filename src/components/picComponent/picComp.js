@@ -33,7 +33,7 @@ function PicComp(props) {
                 ref={ref}
                 animate={animate}
                 className='w-[100%] p-7 md:w-[40%]'>
-                <img src={dunia} alt=''/>
+                <img src={dunia} alt='' className='rounded-3xl'/>
         </motion.div>
     );
 }

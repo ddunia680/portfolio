@@ -31,22 +31,22 @@ function About(props) {
     }, [inView, animate])
 
     return (
-        <div id='about' className='flex flex-col-reverse justify-center md:container mx-0 md:mx-7 md:flex-row'>
+        <div id='about' className='flex flex-col-reverse justify-center xl:container mx-0 md:mx-7 md:flex-row'>
             <PicComp/>
             <motion.div 
                 ref={ref}
                 animate={animate}
-                className='w-[90%] flex flex-col mx-4 my-20 md:w-[40%]'>
+                className='w-[90%] flex flex-col mx-4 my-20 md:w-[60%]'>
                 <h1 className='text-2xl font-bold text-center md:text-3xl md:text-left'>About Me 
                 <FontAwesomeIcon icon={faAsterisk} className='text-fromLogo mx-1 md:mx-2'/>
                 <FontAwesomeIcon icon={faAsterisk} className='text-fromLogo mx-1 md:mx-2'/>
                 <FontAwesomeIcon icon={faAsterisk} className='text-fromLogo mx-1 md:mx-2'/></h1>
 
-                <p className='my-3 text-left'>I'm named <span className='text-xl font-bold text-fromLogo md:text-2xl'>Dunia Ghislain</span>, since I learned about the tech industry and the value it adds to every aspect of human's life today, I have been very excited about learning it and growing</p>
+                <p className='my-3 text-left'>I'm named <span className='text-xl font-bold text-fromLogo md:text-2xl'>Dunia Ghislain</span>, A fullstack web developer in the Javascript Language, A prominent problem solver and a hands on keyboard guy. </p>
 
-                <p className='my-3 text-left'>I'm an educated engineer both in working ethic as well as in the technical aspect. I'm comfortable working with a team and contributing to global projects </p>
+                <p className='my-3 text-left'>I'm a prominent engineer both with academic certification and experience in software development and in position to turn that business idea that has been bothering you into a digital product that overlaps your expectation! </p>
 
-                <p className='my-3 text-left'>I'm currently a frontend developer but also in learning of the backend technologies which I will be able to add to my CV soon enough. These are the technologies I currently am comfortable working with</p>
+                <p className='my-3 text-left'>I'm always working on something so stay tune...</p>
 
                 <p className='text-lg text-fromLogo mt-7 md:text-2xl'>HTML <FontAwesomeIcon icon={faCircleDot}/> CSS <FontAwesomeIcon icon={faCircleDot}/> TailwindCSS <FontAwesomeIcon icon={faCircleDot}/> ReactJs <FontAwesomeIcon icon={faCircleDot}/> Firebase <FontAwesomeIcon icon={faCircleDot}/> NodeJS <FontAwesomeIcon icon={faCircleDot}/> ExpressJs <FontAwesomeIcon icon={faCircleDot}/> MongoDB <FontAwesomeIcon icon={faCircleDot}/></p>
             </motion.div>
