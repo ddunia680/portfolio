@@ -26,7 +26,7 @@ function Header(props) {
             <div className='hidden md:flex flex-row h-[100%] items-center'>
                 <NavItems/>
                 <GoButton>
-                    <a href='https://firebasestorage.googleapis.com/v0/b/upload-files-4592a.appspot.com/o/sharedFiles%2FCVDuniaDunia-updated_1680294204146.pdf?alt=media&token=25d95fc7-8f45-46ea-ab09-4c2fb65ca48a'>
+                    <a href='https://firebasestorage.googleapis.com/v0/b/upload-files-4592a.appspot.com/o/sharedFiles%2FCVDuniaDunia-corrected_1685977309486.pdf?alt=media&token=fcd43094-68bb-479c-b8df-08f6d6fc6e1c&_gl=1*e92pev*_ga*MzM0MzY3MzE0LjE2NTU3OTkwOTE.*_ga_CW55HF8NVT*MTY4NTk3NzMzNC4yNi4xLjE2ODU5NzczOTkuMC4wLjA.'>
                         Download my CV
                     </a>
                 </GoButton>
