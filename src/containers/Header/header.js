@@ -19,7 +19,7 @@ function Header(props) {
     }
 
     return (
-        <header className='fixed z-10 top-0 w-screen h-[4rem] md:h-20 bg-darkBlue text-white items-center mx-auto flex flex-row justify-between px-3 shadow-md shadow-violet lg:px-40'>
+        <header className='fixed z-10 top-0 w-screen h-[4rem] md:h-20 backdrop-blur-xl backdrop-brightness-75 text-white items-center mx-auto flex flex-row justify-between px-3 shadow-md shadow-violet lg:px-40'>
             <div className='w-[50px] h-[70%]'>
                 <img src={logo} alt=''/>
             </div>
@@ -33,12 +33,12 @@ function Header(props) {
             </div>
             <div className='h-80% block md:hidden'>
                 {!showDropUI ? 
-                <FontAwesomeIcon icon={faListUl} className='text-fromLogo text-3xl'onClick={showDrop}/>
+                <FontAwesomeIcon icon={faListUl} className='text-fromLogo text-xl'onClick={showDrop}/>
                 :
-                <FontAwesomeIcon icon={faX} className='text-fromLogo text-3xl' onClick={hideDrop}/> }
+                <FontAwesomeIcon icon={faX} className='text-fromLogo text-xl' onClick={hideDrop}/> }
             </div>
             {showDropUI ? 
-            <div className='absolute bg-darkBlue right-0 top-20 px-10 border-l-2 border-r-2 border-b-2  border-violet'>
+            <div className='absolute bg-darkBlue right-0 top-[4rem] px-10 border-l-2 border-r-2 border-b-2  border-violet'>
                 <ul className='flex flex-col space-y-2'>
                     <li className='hover:text-fromLogo py-1 cursor-pointer' onClick={() => {
                         window.scrollTo({

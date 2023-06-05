@@ -7,7 +7,7 @@ import Footer from "./containers/footer/footer";
 
 function App() {
   return (
-    <div className="App bg-darkLighterBlue text-white lg:text-lg">
+    <div className="App bg-gradient-to-br from-darkLighterBlue via-darkLighterBlue to-violet text-white lg:text-lg">
       <Header/>
       <Presentation/>
       <About/>
