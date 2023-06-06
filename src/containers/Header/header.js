@@ -19,7 +19,7 @@ function Header(props) {
             setTheme('light');
         }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [darkQuery]);
+    }, []);
 
     const showDrop = () => {
         setShowDropUI(true);
