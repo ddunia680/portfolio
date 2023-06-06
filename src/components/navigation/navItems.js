@@ -3,8 +3,8 @@ import React from 'react';
 function navItems(props) {
     return (
         <nav className='h-[80%]'>
-            <ul className='hidden md:flex flex-row justify-start h-[100%]'>
-                <li className='h-[100%] px-5 mx-1 flex items-center transition-all duration-500 hover:bg-fromLogo hover:text-darkBlue hover:rounded-lg hover:transition-all hover:duration-500'
+            <ul className='hidden md:flex flex-row justify-start h-[100%] text-darkLighterBlue dark:text-white'>
+                <li className='h-[100%] px-5 mx-1 flex items-center transition-all duration-500 hover:bg-fromLogo hover:text-darkBlue hover:rounded-lg hover:transition-all cursor-pointer hover:duration-500'
                 onClick={() => {
                     window.scrollTo({
                         top: 440,
@@ -13,7 +13,7 @@ function navItems(props) {
                 }}>
                     About
                 </li>
-                <li className='h-[100%] px-5 mx-1 flex items-center transition-all duration-500 hover:bg-fromLogo hover:text-darkBlue hover:rounded-lg hover:transition-all hover:duration-500'
+                <li className='h-[100%] px-5 mx-1 flex items-center transition-all duration-500 hover:bg-fromLogo hover:text-darkBlue hover:rounded-lg hover:transition-all cursor-pointer hover:duration-500'
                 onClick={() => {
                     window.scrollTo({
                         top: 1350,
@@ -22,7 +22,7 @@ function navItems(props) {
                 }}>
                     Projects
                 </li>
-                <li className='h-[100%] px-5 mx-1 flex items-center transition-all duration-500 hover:bg-fromLogo hover:text-darkBlue hover:rounded-lg hover:transition-all hover:duration-500'
+                <li className='h-[100%] px-5 mx-1 flex items-center transition-all duration-500 hover:bg-fromLogo hover:text-darkBlue hover:rounded-lg hover:transition-all cursor-pointer hover:duration-500'
                 onClick={() => {
                     window.scrollTo({
                         top: 2100,

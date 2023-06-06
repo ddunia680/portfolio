@@ -24,7 +24,7 @@ function ProjectItem(props) {
     }, [inView, animate])
 
     return (
-        <motion.a ref={ref} animate={animate} href={props.link} className='w-[90%] md:w-[25rem] p-[1rem] backdrop-brightness-75 duration-75 rounded-3xl md:mx-[1rem] hover:backdrop-brightness-150 hover:duration-75'>
+        <motion.a ref={ref} animate={animate} href={props.link} className='w-[90%] md:w-[25rem] p-[1rem] backdrop-brightness-110 dark:backdrop-brightness-75 duration-75 rounded-3xl md:mx-[1rem] hover:backdrop-brightness-90 dark:hover:backdrop-brightness-150 hover:duration-75'>
             <div title='click to go to project' className='flex flex-col justify-start items-center space-y-1'>
                 <h2 className='p-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>{props.title}</h2>
                 <p className='text-sm p-2 text-center md:text-left'>

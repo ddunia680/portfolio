@@ -6,15 +6,16 @@ import Leaving from "./containers/leavingSection/leaving";
 import Footer from "./containers/footer/footer";
 
 function App() {
+
   return (
-    <div className="App bg-gradient-to-br from-darkLighterBlue via-darkLighterBlue to-violet text-white lg:text-lg">
-      <Header/>
-      <Presentation/>
-      <About/>
-      <Projects/>
-      <Leaving/>
-      <Footer/>
-    </div>
+      <div className="App bg-gradient-to-br from-lightBg1 via-lightBg1 to-lightBg2 dark:from-darkLighterBlue dark:via-darkLighterBlue dark:to-violet dark:text-white lg:text-lg duration-75">
+        <Header/>
+        <Presentation/>
+        <About/>
+        <Projects/>
+        <Leaving/>
+        <Footer/>
+      </div>
   );
 }
 
