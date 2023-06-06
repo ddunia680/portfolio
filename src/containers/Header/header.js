@@ -11,6 +11,15 @@ function Header(props) {
     let [showDropUI, setShowDropUI] = useState(false);
     const [theme, setTheme] = useState('dark');
     const element = document.documentElement;
+    const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    // console.log(darkQuery.matches);
+
+    useEffect(() => {
+        if(darkQuery.matches === false) {
+            setTheme('light');
+        }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [darkQuery]);
 
     const showDrop = () => {
         setShowDropUI(true);
@@ -24,11 +33,9 @@ function Header(props) {
         switch (theme) {
             case 'dark':
                 element.classList.add('dark');
-                localStorage.setItem('theme', 'dark');
                 break;
             case 'light':
                 element.classList.remove('dark');
-                localStorage.setItem('theme', 'light');
                 break;
             default:
                 break;
