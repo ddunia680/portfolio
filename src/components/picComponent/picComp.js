@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
 
-import dunia from '../../images/dunia.JPG';
+import dunia from '../../images/myPic.jpg';
 
 function PicComp(props) {
     const animate = useAnimation();

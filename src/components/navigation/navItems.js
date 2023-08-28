@@ -1,6 +1,8 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-function navItems(props) {
+function NavItems(props) {
+    const { t } = useTranslation();
     return (
         <nav className='h-[80%]'>
             <ul className='hidden md:flex flex-row justify-start h-[100%] text-darkLighterBlue dark:text-white'>
@@ -11,7 +13,7 @@ function navItems(props) {
                         behavior: 'smooth'
                     })
                 }}>
-                    About
+                    {t('aboutInMenu')}
                 </li>
                 <li className='h-[100%] px-5 mx-1 flex items-center transition-all duration-500 hover:bg-fromLogo hover:text-darkBlue hover:rounded-lg hover:transition-all cursor-pointer hover:duration-500'
                 onClick={() => {
@@ -20,7 +22,7 @@ function navItems(props) {
                         behavior: 'smooth'
                     })
                 }}>
-                    Projects
+                    {t('projects')}
                 </li>
                 <li className='h-[100%] px-5 mx-1 flex items-center transition-all duration-500 hover:bg-fromLogo hover:text-darkBlue hover:rounded-lg hover:transition-all cursor-pointer hover:duration-500'
                 onClick={() => {
@@ -29,11 +31,11 @@ function navItems(props) {
                         behavior: 'smooth'
                     })
                 }}>
-                    Contacts
+                    {t('contacts')}
                 </li>
             </ul>
         </nav>
     );
 }
 
-export default navItems;
+export default NavItems;

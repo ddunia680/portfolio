@@ -7,13 +7,16 @@ import foodApp from '../../images/foodApp.png';
 import phonesApp from '../../images/phonesApp.png';
 import whatsapp from '../../images/whatsapp.png';
 import twitter from '../../images/twitter.png';
+import wedding from '../../images/weddingApp.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAsterisk, faCircleDot } from '@fortawesome/free-solid-svg-icons';
 import './projects.css';
+import { useTranslation } from 'react-i18next';
 
 function Projects(props) {
     const animate = useAnimation();
     const { ref, inView } = useInView();
+    const { t } = useTranslation();
 
     useEffect(() => {
         if(inView) {
@@ -32,13 +35,15 @@ function Projects(props) {
     }, [inView, animate])
 
     let items = [
-        {title: 'Food Delivery App', description: 'The food delivery app here mainly focuses on providing the possibility for a user to view a certain number of articles from a remote restaurant, be able to add them to a cart and launch the purchase. It also provides an admin side for order processing and new items addition', stacks: <p className='text-[13px] text-fromLogo mt-[5px] md:text-[15px] text-center md:text-left'>HTML <FontAwesomeIcon icon={faCircleDot}/> CSS <FontAwesomeIcon icon={faCircleDot}/> ReactJs <FontAwesomeIcon icon={faCircleDot}/> Firebase <FontAwesomeIcon icon={faCircleDot}/></p>, image: foodApp, link: 'https://e-commerce-food-app-delta.vercel.app/' },
+        {title: 'Wedding Reception Management', description: t('weddingProjDescription'), stacks: <p className='text-[13px] text-fromLogo mt-[5px] md:text-[15px] text-center md:text-left'>HTML <FontAwesomeIcon icon={faCircleDot}/> CSS <FontAwesomeIcon icon={faCircleDot}/> TailwindCSS <FontAwesomeIcon icon={faCircleDot}/> ReactJs <FontAwesomeIcon icon={faCircleDot}/> NodeJs <FontAwesomeIcon icon={faCircleDot}/> ExpressJs <FontAwesomeIcon icon={faCircleDot}/> MongoDB <FontAwesomeIcon icon={faCircleDot}/> Socket.io <FontAwesomeIcon icon={faCircleDot}/></p>, image: wedding, link: 'https://wedding-management-app.vercel.app/' },
 
-        {title: 'Phones Shopping App', description: 'The Phones Shopping App provides a UI that allows a user to choose a phone they would like to buy, view all the details about the phone for better decision making, adding the articles to the cart and in the end be able to place the order.', stacks: <p className='text-[13px] text-fromLogo mt-[5px] md:text-[15px] text-center md:text-left'>HTML <FontAwesomeIcon icon={faCircleDot}/> CSS <FontAwesomeIcon icon={faCircleDot}/> ReactJs <FontAwesomeIcon icon={faCircleDot}/> Firebase <FontAwesomeIcon icon={faCircleDot}/></p>, image: phonesApp, link: 'https://phones-shopping-app.vercel.app/' },
+        {title: 'My Twitter Clone App', description: t('twitterProjDescription'), stacks: <p className='text-[13px] text-fromLogo mt-[5px] md:text-[15px] text-center md:text-left'>HTML <FontAwesomeIcon icon={faCircleDot}/> CSS <FontAwesomeIcon icon={faCircleDot}/> TailwindCSS <FontAwesomeIcon icon={faCircleDot}/> ReactJs <FontAwesomeIcon icon={faCircleDot}/> NodeJs <FontAwesomeIcon icon={faCircleDot}/> ExpressJs <FontAwesomeIcon icon={faCircleDot}/> MongoDB <FontAwesomeIcon icon={faCircleDot}/> Socket.io <FontAwesomeIcon icon={faCircleDot}/></p>, image: twitter, link: 'https://twitter-clone-app-theta.vercel.app/' },
 
-        {title: 'Whatsapp Web Clone App', description: "This is an app that performs most of the web whastapp operations, it goes from text, audio, image and docs sharing to audio and video calls.", stacks: <p className='text-[13px] text-fromLogo mt-[5px] md:text-[15px] text-center md:text-left'>HTML <FontAwesomeIcon icon={faCircleDot}/> CSS <FontAwesomeIcon icon={faCircleDot}/> TailwindCSS <FontAwesomeIcon icon={faCircleDot}/> ReactJs <FontAwesomeIcon icon={faCircleDot}/> NodeJs <FontAwesomeIcon icon={faCircleDot}/> ExpressJs <FontAwesomeIcon icon={faCircleDot}/> MongoDB <FontAwesomeIcon icon={faCircleDot}/> Socket.io <FontAwesomeIcon icon={faCircleDot}/></p>, image: whatsapp, link: 'https://my-whatsapp-clone.vercel.app/' },
+        {title: 'Whatsapp Web Clone App', description: t('whatsappProjDescription'), stacks: <p className='text-[13px] text-fromLogo mt-[5px] md:text-[15px] text-center md:text-left'>HTML <FontAwesomeIcon icon={faCircleDot}/> CSS <FontAwesomeIcon icon={faCircleDot}/> TailwindCSS <FontAwesomeIcon icon={faCircleDot}/> ReactJs <FontAwesomeIcon icon={faCircleDot}/> NodeJs <FontAwesomeIcon icon={faCircleDot}/> ExpressJs <FontAwesomeIcon icon={faCircleDot}/> MongoDB <FontAwesomeIcon icon={faCircleDot}/> Socket.io <FontAwesomeIcon icon={faCircleDot}/></p>, image: whatsapp, link: 'https://my-whatsapp-clone.vercel.app/' },
+        
+        {title: 'Phones Shopping App', description: t('phonesProjDescription'), stacks: <p className='text-[13px] text-fromLogo mt-[5px] md:text-[15px] text-center md:text-left'>HTML <FontAwesomeIcon icon={faCircleDot}/> CSS <FontAwesomeIcon icon={faCircleDot}/> ReactJs <FontAwesomeIcon icon={faCircleDot}/> Firebase <FontAwesomeIcon icon={faCircleDot}/></p>, image: phonesApp, link: 'https://phones-shopping-app.vercel.app/' },
 
-        {title: 'My Twitter Clone App', description: "This is an app that simulates most of the twitter web app functionalities. It goes from following users to tweeting and commenting to tweets.", stacks: <p className='text-[13px] text-fromLogo mt-[5px] md:text-[15px] text-center md:text-left'>HTML <FontAwesomeIcon icon={faCircleDot}/> CSS <FontAwesomeIcon icon={faCircleDot}/> TailwindCSS <FontAwesomeIcon icon={faCircleDot}/> ReactJs <FontAwesomeIcon icon={faCircleDot}/> NodeJs <FontAwesomeIcon icon={faCircleDot}/> ExpressJs <FontAwesomeIcon icon={faCircleDot}/> MongoDB <FontAwesomeIcon icon={faCircleDot}/> Socket.io <FontAwesomeIcon icon={faCircleDot}/></p>, image: twitter, link: 'https://twitter-clone-app-theta.vercel.app/' },
+        {title: 'Food Delivery App', description: t('foodsProjDescription'), stacks: <p className='text-[13px] text-fromLogo mt-[5px] md:text-[15px] text-center md:text-left'>HTML <FontAwesomeIcon icon={faCircleDot}/> CSS <FontAwesomeIcon icon={faCircleDot}/> ReactJs <FontAwesomeIcon icon={faCircleDot}/> Firebase <FontAwesomeIcon icon={faCircleDot}/></p>, image: foodApp, link: 'https://e-commerce-food-app-delta.vercel.app/' },
     ]
 
 

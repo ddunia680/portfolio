@@ -6,13 +6,18 @@ import GoButton from '../../components/GoButton/goButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faListUl, faX, faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
 import logo from '../../images/logo.png'
+import { useTranslation } from 'react-i18next';
+import './header.css';
+import { CSSTransition } from 'react-transition-group';
 
 function Header(props) {
     let [showDropUI, setShowDropUI] = useState(false);
     const [theme, setTheme] = useState('dark');
     const element = document.documentElement;
     const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
-    // console.log(darkQuery.matches);
+    const { t } = useTranslation();
+
+    const dropClasses = [`absolute bg-darkBlue right-0 top-[4rem] px-10 border-l-2 border-r-2 border-b-2  border-violet`, showDropUI ? 'dropDownVisible' : 'dropDownNotVisible' ];
 
     useEffect(() => {
         if(darkQuery.matches === false) {
@@ -52,12 +57,12 @@ function Header(props) {
                 <NavItems/>
                 <GoButton>
                     <a href='https://firebasestorage.googleapis.com/v0/b/upload-files-4592a.appspot.com/o/sharedFiles%2FCVDuniaDunia-corrected_1685977309486.pdf?alt=media&token=fcd43094-68bb-479c-b8df-08f6d6fc6e1c&_gl=1*e92pev*_ga*MzM0MzY3MzE0LjE2NTU3OTkwOTE.*_ga_CW55HF8NVT*MTY4NTk3NzMzNC4yNi4xLjE2ODU5NzczOTkuMC4wLjA.'>
-                        Download my CV
+                        {t('downloadButton')}
                     </a>
                 </GoButton>
                 <div className='hidden w-[3rem] md:w-[4rem] h-[1.7rem] md:h-[2rem] bg-darkLighterBlue dark:bg-white rounded-full mx-[1rem] md:flex items-center duration-75 dark:duration-75 justify-start dark:justify-end' onClick={() => (setTheme(curr => curr === 'dark' ? 'light' : 'dark'))}>
                     <div className='bg-white dark:bg-darkLighterBlue rounded-full h-[1.6rem] md:h-[1.8rem] w-[1.6rem] md:w-[1.8rem] mx-[0.1rem] md:mx-[0.2rem] flex justify-center items-center duration-75 dark:duration-75'>
-                        <FontAwesomeIcon icon={ theme === 'dark' ? faMoon : faSun} className=' w-[0.7rem] md:w-[1rem] text-darkLighterBlue dark:text-white duration-75 dark:duration-75' onClick={() => (setTheme(curr => curr === 'dark' ? 'light' : 'dark'))} title={theme === 'dark' ? 'Turn to Light mode' : 'Turn to Dark Mode'} />
+                        <FontAwesomeIcon icon={ theme === 'dark' ? faMoon : faSun} className=' w-[0.7rem] md:w-[1rem] text-darkLighterBlue dark:text-white duration-75 dark:duration-75' onClick={() => (setTheme(curr => curr === 'dark' ? 'light' : 'dark'))} title={theme === 'dark' ? t('lightModeTitle') : t('darkModeTitle')} />
                     </div>
                 </div>
             </div>
@@ -73,33 +78,33 @@ function Header(props) {
                     </div>
                 </div>
             </div>
-            {showDropUI ? 
-            <div className='absolute bg-darkBlue right-0 top-[4rem] px-10 border-l-2 border-r-2 border-b-2  border-violet'>
-                <ul className='flex flex-col space-y-2'>
-                    <li className='hover:text-fromLogo py-1 cursor-pointer' onClick={() => {
-                        window.scrollTo({
-                            top: 500,
-                            behavior: 'smooth'
-                        })
-                        hideDrop()
-                    }}>About</li>
-                    <li className='hover:text-fromLogo py-1 cursor-pointer' onClick={() => {
-                        window.scrollTo({
-                            top: 1850,
-                            behavior: 'smooth'
-                        })
-                        hideDrop()
-                    }}>Projects</li>
-                    <li className='hover:text-fromLogo py-1 cursor-pointer' onClick={() => {
-                        window.scrollTo({
-                            top: 4200,
-                            behavior: 'smooth'
-                        })
-                        hideDrop()
-                    }}>Contacts</li>
-                </ul>
-            </div>
-            : null}
+            <CSSTransition in={showDropUI} timeout={300} mountOnEnter unmountOnExit>
+                <div className={dropClasses.join(' ')}>
+                    <ul className='flex flex-col space-y-2'>
+                        <li className='hover:text-fromLogo py-1 cursor-pointer' onClick={() => {
+                            window.scrollTo({
+                                top: 500,
+                                behavior: 'smooth'
+                            })
+                            hideDrop()
+                        }}>{t('aboutInMenu')}</li>
+                        <li className='hover:text-fromLogo py-1 cursor-pointer' onClick={() => {
+                            window.scrollTo({
+                                top: 1850,
+                                behavior: 'smooth'
+                            })
+                            hideDrop()
+                        }}>{t('projects')}</li>
+                        <li className='hover:text-fromLogo py-1 cursor-pointer' onClick={() => {
+                            window.scrollTo({
+                                top: 4200,
+                                behavior: 'smooth'
+                            })
+                            hideDrop()
+                        }}>{t('contacts')}</li>
+                    </ul>
+                </div>
+            </CSSTransition>
             
         </header>
     );
