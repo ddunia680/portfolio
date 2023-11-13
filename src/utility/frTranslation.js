@@ -1,5 +1,5 @@
 const translation = {
-    country: 'Kampala, Ouganda',
+    country: '. Kampala, Ouganda',
     downloadButton: 'Télécharger mon CV',
     aboutInMenu: "A propos",
     projects: "Projects",
