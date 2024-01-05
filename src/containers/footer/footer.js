@@ -14,9 +14,9 @@ function Footer(props) {
     return (
         <footer id='footer' className='container pb-10 text-sm mx-auto mt-60 flex flex-col-reverse md:flex-row md:justify-between'>
             <div className='flex flex-col space-y-5 py-5 w-90 text-center md:text-left md:w-[40%]'>
-                <div className='flex flex-col text-center md:text-left md:flex-row md:justify-between'>
+                <div className='flex flex-col space-y-[1rem] md:space-y-0 text-center md:text-left md:flex-row md:justify-start md:space-x-[5rem]'>
                     <h5><FontAwesomeIcon icon={faLocationDot} /> {t('country')}</h5>
-                    <h5><FontAwesomeIcon icon={faPhone} />+256 779 364 053</h5>
+                    <h5><FontAwesomeIcon icon={faPhone} />. +256 779 364 053</h5>
                 </div>
                 <p><span className='text-fromLogo'>Dunia Dunia</span> &copy;2024 All rights reserved.</p>
             </div>
