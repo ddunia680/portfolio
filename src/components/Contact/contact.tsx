@@ -20,10 +20,10 @@ export default function Contact() {
                 />
         </h2>
         <div className='w-full flex flex-col justify-center items-start gap-[2rem]' >
-            <p className='w-full md:w-[60%] text-headerColor1 dark:text-blue-200 font-semibold dark:font-normal'>
+            <p className='w-full md:w-[60%] text-headerColor1 dark:text-blue-200  font-normal md:font-semibold dark:font-normal'>
                 <Trans components={{ b: <strong/> }} >{t('contactText')}</Trans>
             </p>
-            <p className='w-[60%] text-headerColor1 dark:text-blue-200 font-semibold dark:font-normal'>
+            <p className='w-[60%] text-headerColor1 dark:text-blue-200 font-normal md:font-semibold dark:font-normal'>
                 <Trans components={{ 
                     span: <span className='text-fromLogo underline'/>, 
                     a: <a href='#connectB' className='block md:hidden text-blue-500 underline'/> }} 

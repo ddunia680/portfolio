@@ -50,13 +50,13 @@ export default function About() {
                     data-testid="loader"
                 />
             </h1>
-            <p className='my-3 text-left text-headerColor1 dark:text-blue-200 font-semibold dark:font-normal tracking-widest md:mb-[2rem]'
+            <p className='my-3 text-left text-headerColor1 dark:text-blue-200 font-normal md:font-semibold dark:font-normal tracking-widest md:mb-[2rem]'
             >{t('named1')} <span className='text-xl font-bold text-fromLogo md:text-2xl'>Dunia Ghislain</span>, {t('named2')}</p>
 
-            <p className='my-3 text-left text-headerColor1 dark:text-blue-200 font-semibold dark:font-normal tracking-widest md:mb-[2rem]'>
+            <p className='my-3 text-left text-headerColor1 dark:text-blue-200 font-normal md:font-semibold dark:font-normal tracking-widest md:mb-[2rem]'>
                 {t('detailed1')}</p>
 
-            <p className='my-3 text-left text-headerColor1 dark:text-blue-200 font-semibold dark:font-normal tracking-widest md:mb-[2rem]'>
+            <p className='my-3 text-left text-headerColor1 dark:text-blue-200 font-normal md:font-semibold dark:font-normal tracking-widest md:mb-[2rem]'>
                 {t('detailed2')}</p>
             <p className='flex justify-between items-center' >
                 <TbFileTypeHtml size={30} className='text-[#e96228]' />
