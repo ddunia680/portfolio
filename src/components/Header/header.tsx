@@ -51,7 +51,7 @@ const Header = ({ dropState, changeDropState }: propsTypes) => {
     
   return (
     <header className='fixed top-0 left-0 w-full h-[4rem] md:h-[5rem] flex justify-center items-center bg-white dark:bg-gradient-to-r dark:from-headerColor1 
-    dark:to-headerColor2 shadow-md md:shadow-md shadow-[#292958] z-[10000] backdrop-blur-xl backdrop-brightness-75'>
+    dark:to-headerColor2 shadow-md md:shadow-md shadow-white dark:shadow-[#292958] z-[10000] backdrop-blur-xl backdrop-brightness-75'>
         <div className='w-full md:w-[80%] h-full flex justify-between items-center px-[0.5rem] md:px-0 '>
             <div className='w-[2rem] h-[2rem]'>
                 <img src={logo} alt='the logo' className='w-full h-full object-contain shadow-md shadow-black' />
