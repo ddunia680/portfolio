@@ -65,7 +65,7 @@ function App() {
         </div>
       : 
         <div className="w-100 h-100 bg-white dark:bg-gradient-to-br dark:from-black dark:via-black dark:to-headerColor1 
-        dark:duration-150 duration-150 flex flex-col justify-start items-center">
+        dark:duration-150 duration-150 flex flex-col justify-start items-center" onClick={() => dropIsOpen && setDropIsOpen(false)}>
           <Header dropState={dropIsOpen} changeDropState={changeDropState}/>
           <Presentation />
           <About/>

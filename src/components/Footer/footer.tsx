@@ -11,10 +11,10 @@ export default function Footer() {
     }
 
   return (
-    <div className='w-full h-[10rem] flex justify-center items-center shadow-gray-300 dark:shadow-headerColor1 shadow-inner my-[2rem] md:my-0'>
-        <div className='w-full h-full md:w-[80%] px-[1rem] md:px-0 flex flex-col-reverse md:flex-row justify-between items-center'>
-            <div className=' w-full h-[50%] md:h-full md:w-[40%] flex flex-col justify-evenly items-start space-y-[0.5rem]'>
-                <div className='w-full flex flex-col md:flex-row space-y-[0.5rem] md:space-y-0 justify-between items-center text-headerColor2 
+    <div className='w-full h-[15rem] md:h-[10rem] flex justify-center items-center shadow-gray-300 dark:shadow-headerColor1 shadow-inner my-[2rem] md:my-0'>
+        <div className='w-full h-full md:w-[80%] px-[1rem] md:px-0 flex flex-col-reverse md:flex-row justify-between items-center space-y-[1rem] md:space-y-0'>
+            <div className=' w-full h-[50%] md:h-full md:w-[40%] flex flex-col justify-evenly items-start space-y-[1rem] md:space-y-[0.5rem]'>
+                <div className='w-full flex flex-col md:flex-row space-y-[1rem] md:space-y-0 justify-between items-center text-headerColor2 
                 font-semibold dark:font-normal dark:text-slate-300 tracking-widest text-[13px] md:text-[16px]'>
                     <p className='flex justify-start items-center'> <IoIosPin size={20} className='text-blue-500' /> {t('place')} </p>
                     <p className='flex justify-start items-center'> <IoMdCall size={20} className='text-blue-500' />  +256 779 364 053 </p>
@@ -23,7 +23,7 @@ export default function Footer() {
                     <span className='text-[#f80054] font-semibold'>Dunia Dunia</span> &copy; 2024, All Rights Reserved</p>
             </div>
 
-            <div className=' w-[80%] h-[50%] md:h-full md:w-[30%] flex flex-col justify-evenly items-center md:items-end'>
+            <div className=' w-[80%] h-[50%] md:h-full md:w-[30%] flex flex-col justify-evenly items-center md:items-end space-y-[1rem] md:space-y-0'>
                 <div className='w-[70%] flex justify-between items-center text-headerColor2 dark:text-white'>
                     <a target='blank' href='https://github.com/ddunia680'><IoLogoGithub size={27} className='hover:text-black hover:scale-125 dark:hover:text-fromLogo hover:duration-150 duration-150'/></a>
                     <a target='blank' href='https://twitter.com/Dunia_Dunia5'><IoLogoTwitter size={27} className='hover:text-black hover:scale-125 dark:hover:text-fromLogo hover:duration-150 duration-150' /></a>

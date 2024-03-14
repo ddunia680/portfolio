@@ -39,13 +39,13 @@ export default function ProjectItem({ title, image, description, link }: project
             hidden: { opacity: 0 }, 
             show: { opacity: 1 }, 
         }}
-        className='relative min-w-[89%] md:min-w-[20rem] w-[90%] md:w-[20rem] h-[20rem] md:h-[30rem] bg-[#051a36] rounded-2xl shadow-md 
+        className='relative min-w-[89%] md:min-w-[20rem] w-[90%] md:w-[20rem] h-[30rem] bg-[#051a36] rounded-2xl shadow-md 
         shadow-[#02070e] flex flex-col justify-evenly items-center space-y-2 px-2' onMouseEnter={() => setHoveredOn(true)} 
         onMouseLeave={() => setHoveredOn(false)}>
-        <h3 className='text-fromLogo text-xl text-center font-extrabold'>{title}</h3>
-        <div className='text-blue-200 text-[200] md:text-[500] tracking-wide h-[40] overflow-hidden text-center'>{description.substring(0, 200).concat('...')}</div>
-        <div className='w-full h-[30%] overflow-hidden rounded-lg shadow-lg shadow-black'>
-            <img src={image} alt='an Image' className='object-cover'/>
+        <h3 className='text-fromLogo text-xl text-center font-bold'>{title}</h3>
+        <div className='text-blue-200 text-[200] md:text-[500] font-normal tracking-tight h-[40] overflow-hidden text-center'>{description.substring(0, 300).concat('...')}</div>
+        <div className='w-full h-[30%] overflow-hidden rounded-lg shadow-lg shadow-black flex justify-center items-center'>
+            <img src={image} alt='an Image' className='object-contain'/>
         </div>
         <AnimatePresence initial={false} mode="wait">
             { hoveredOn && 
